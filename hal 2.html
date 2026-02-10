@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy 17 🤍</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(180deg, #b3ddff, #eaf6ff);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      animation: fadeIn 1.2s ease;
+    }
+
+    .cloud {
+      position: absolute;
+      background: white;
+      border-radius: 50px;
+      opacity: 0.5;
+      animation: move linear infinite;
+    }
+
+    @keyframes move {
+      from { transform: translateX(-200px); }
+      to { transform: translateX(120vw); }
+    }
+
+    .card {
+      background: white;
+      border-radius: 22px;
+      padding: 32px;
+      max-width: 420px;
+      box-shadow: 0 25px 45px rgba(0,0,0,0.12);
+      text-align: center;
+      z-index: 10;
+      animation: slideUp 1s ease;
+    }
+
+    h1 {
+      font-weight: 500;
+      margin-bottom: 8px;
+    }
+
+    .subtitle {
+      font-size: 14px;
+      opacity: 0.8;
+      margin-bottom: 24px;
+    }
+
+    .message {
+      font-size: 14px;
+      line-height: 1.9;
+      margin-bottom: 24px;
+    }
+
+    iframe {
+      border-radius: 12px;
+    }
+
+    .footer {
+      font-size: 12px;
+      opacity: 0.7;
+      margin-top: 18px;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideUp {
+      from { transform: translateY(20px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- CLOUDS -->
+  <div class="cloud" style="width:160px;height:60px;top:15%;animation-duration:80s;"></div>
+  <div class="cloud" style="width:220px;height:80px;top:55%;animation-duration:110s;"></div>
+
+  <div class="card">
+    <h1>Happy 17 🤍</h1>
+    <div class="subtitle">buat adek sayangg</div>
+
+    <div class="message">
+      Selamat ulang tahun ya.  
+      Semoga di umur baru ini kamu selalu dikelilingi hal-hal baik,  
+      hal kecil yang bikin tenang, dan hari-hari yang lembut ke kamu.
+      <br><br>
+      pelan-pelan aja, kamu udah cukup 🤍
+    </div>
+
+    <iframe
+      src="https://open.spotify.com/embed/track/5K3mMpiWtKvCplBl7ov4Q9"
+      width="100%" height="152"
+      frameborder="0"
+      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+      loading="lazy">
+    </iframe>
+
+    <div class="footer">
+      play the song while reading ☁️
+    </div>
+  </div>
+
+</body>
+</html>

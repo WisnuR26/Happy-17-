@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hi 🤍</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(180deg, #9fd3ff, #eaf6ff);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .cloud {
+      position: absolute;
+      background: white;
+      border-radius: 50px;
+      opacity: 0.6;
+      animation: move linear infinite;
+    }
+
+    @keyframes move {
+      from { transform: translateX(-200px); }
+      to { transform: translateX(120vw); }
+    }
+
+    .box {
+      z-index: 10;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    h1 {
+      font-weight: 500;
+      margin-bottom: 20px;
+    }
+
+    button {
+      padding: 14px 28px;
+      border: none;
+      border-radius: 30px;
+      background: #6fb7ff;
+      color: white;
+      font-size: 14px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      transform: scale(1.05);
+      background: #4aa3ff;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- CLOUDS -->
+  <div class="cloud" style="width:120px;height:50px;top:20%;animation-duration:60s;"></div>
+  <div class="cloud" style="width:180px;height:70px;top:40%;animation-duration:90s;"></div>
+  <div class="cloud" style="width:100px;height:40px;top:65%;animation-duration:70s;"></div>
+
+  <div class="box">
+    <h1>tap once ya ☁️</h1>
+    <button onclick="go()">start</button>
+  </div>
+
+  <script>
+    function go() {
+      window.location.href = "letter.html";
+    }
+  </script>
+
+</body>
+</html>
